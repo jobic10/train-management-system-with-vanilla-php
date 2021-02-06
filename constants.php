@@ -51,7 +51,7 @@ function sendMail($to, $subject, $msg)
         $from_name = 'E-TICKET SYSTEM ';
         $mail->setFrom($mail->Username, $from_name);
         $mail->addAddress($to); // Name is optional
-        $mail->addReplyTo("simbi@gmail.com", "Adelabu Simbi");
+        $mail->addReplyTo("simbigmail.com", "Adelabu Simbi");
         // $mail->addCC('cc@example.com');
         // $mail->addBCC('bcc@example.com');
 
