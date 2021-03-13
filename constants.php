@@ -18,7 +18,7 @@ define("SITE_NAME", $title);
 date_default_timezone_set("Africa/Lagos");
 $date = date('D, d-M-Y h:i:s A');;
 $date_small = date('d-M-Y');;
-$paystack = ""; //Do not modify/change this! http://localhost/train/pro/verify.php
+$paystack = "sk_test_80aa53fc293de63d7140f69a4d5cf24e34c15540"; //Do not modify/change this! http://localhost/train/pro/verify.php
 if (!function_exists('connect')) {
 
     function connect()
@@ -43,15 +43,15 @@ function sendMail($to, $subject, $msg)
         $mail->isSMTP(); // Set mailer to use SMTP
         $mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers
         $mail->SMTPAuth = true; // Enable SMTP authentication
-        $mail->Username = ""; // SMTP username
-        $mail->Password = ""; // SMTP password
+        $mail->Username = "fromcodemail@gmail.com"; // SMTP username
+        $mail->Password = "08100134741"; // SMTP password
         $mail->SMTPSecure = 'ssl'; // Enable TLS encryption, `ssl` also accepted
         $mail->Port = 465; // TCP port to connect to
         //Recipients
         $from_name = 'E-TICKET SYSTEM ';
         $mail->setFrom($mail->Username, $from_name);
         $mail->addAddress($to); // Name is optional
-        $mail->addReplyTo("simbigmail.com", "Adelabu Simbi");
+        $mail->addReplyTo("simbi@gmail.com", "Adelabu Simbi");
         // $mail->addCC('cc@example.com');
         // $mail->addBCC('bcc@example.com');
 
